@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const port = 3333
+port = process.env.PORT || 80
 
 app.get('/',(request, response) => {
   return response.send(`Servidor Rodando`)
