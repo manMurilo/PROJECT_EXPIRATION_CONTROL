@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 app.get('/',(request, response) => {
-  return response.sendStatus(200)
+  return response.send(`Servidor Rodando`)
 })
 
 app.listen(port, () => {
